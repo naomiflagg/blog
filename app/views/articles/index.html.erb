@@ -9,5 +9,7 @@
 </ul>
 <br>
 
-<p><%= link_to 'Create a new article', new_article_path, class: 'new_article' %></p>
+<% if logged_in? %>
+  <p><%= link_to 'Create a new article', new_article_path, class: 'new_article' %></p>
+<% end %>
 <p><%= link_to 'View all tags', tags_path %></p>
