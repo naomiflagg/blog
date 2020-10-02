@@ -8,6 +8,45 @@ body {
   }
 }
 
+#navbar {
+	position: fixed;
+	height: 60%;
+	width: 107px;
+  border: 1px black solid;
+	z-index: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	top: 0;
+	left: 0;
+  background-color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 45px 0 20px 10px;
+	color: #FF3B3F;
+}
+
+#nav-list {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.nav-link {
+	color: #454545;
+	padding: 13px;
+	display: block;
+}
+
+.nav-link:hover {
+	background-color: #EFEFEF;
+}
+
 a {
   color: #0000FF;
   img {

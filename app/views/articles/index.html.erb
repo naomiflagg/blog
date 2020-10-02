@@ -1,5 +1,9 @@
 <h1>All articles</h1>
 
+<% if params[:month] %>
+  <% @articles = @articles.select { |art| art.month == params[:month].to_i } %>
+<% end %>
+
 <ul id='articles'>
   <% @articles.each do |article| %>
     <li>
