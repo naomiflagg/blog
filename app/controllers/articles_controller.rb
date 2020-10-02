@@ -5,6 +5,9 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    return unless params[:month]
+
+    @articles = @articles.select { |art| art.month == params[:month].to_i }
   end
 
   def show
